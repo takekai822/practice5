@@ -1,0 +1,8 @@
+<%= form_with model: [book, book_comment], url: book_book_comments_path(book), method: :post, local: false do |f| %>
+  <div class="form-group">
+    <%= f.text_area :comment, class: "form-control", rows: "5" %>
+  </div>
+  <div class="form-group">
+    <%= f.submit "送信", class: "btn btn-sm btn-outline-primary float-right" %>
+  </div>
+<% end %>
