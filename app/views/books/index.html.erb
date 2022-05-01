@@ -1,0 +1,12 @@
+<div>
+  <%= render "layouts/errors", obj: @book %>
+  <div>
+    <div>
+      <%= render "users/info", user: current_user %>
+      <%= render "form", book: @book %>
+    </div>
+    <div>
+      <%= render "index", books: @books %>
+    </div>
+  </div>
+</div>

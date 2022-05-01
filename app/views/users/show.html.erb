@@ -1,0 +1,11 @@
+<div>
+  <div>
+    <div>
+      <%= render "info", user: @user %>
+      <%= render "books/form", book: @book %>
+    </div>
+    <div>
+      <%= render "books/index", books: @user.books %>
+    </div>
+  </div>
+</div>
